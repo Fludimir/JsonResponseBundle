@@ -1,0 +1,24 @@
+{
+    "name": "bu/json-response-bundle",
+    "type": "symfony-bundle",
+    "description": "Symfony2 bundle allows to use templates for json responses",
+    "keywords": ["json", "template", "bundle"],
+    "homepage": "http://github.com/Fludimir/JsonResponseBundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Fludimir",
+            "email": "Fludimir@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.2",
+        "symfony/framework-bundle": ">=2.1,<2.3-dev",
+        "sensio/framework-extra-bundle": "2.2.*"
+    },
+    "autoload": {
+        "psr-0": { "Bu\\JsonResponseBundle": "" }
+    },
+    "minimum-stability": "dev",
+    "target-dir": "Bu/JsonResponseBundle"
+}

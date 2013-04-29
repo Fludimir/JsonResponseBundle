@@ -1,0 +1,15 @@
+parameters:
+    bu.jsonresponse.listener.class: Bu\JsonResponseBundle\EventListener\JsonResponseListener
+    bu.jsonresponse.templatehelper.class: Bu\JsonResponseBundle\Templating\JsonResponseHelper
+
+services:
+    bu.jsonresponse.listener:
+        class: %bu.jsonresponse.listener.class%
+        arguments: [@annotation_reader]
+        tags:
+            - { name:kernel.event_listener, event:kernel.controller, method:onKernelController, priority: 1 }
+
+    bu.jsonresponse.templatehelper:
+        class: %bu.jsonresponse.templatehelper.class%
+        tags:
+            - { name:templating.helper, alias:jsonResponse}
