@@ -11,6 +11,12 @@ and requires it.
 
 Installation
 -------------
+Add bundle with composer: 
+
+`composer require bu/json-response-bundle dev-master`
+
+`composer update bu/json-response-bundle`
+
 [Enable php templating engine](http://symfony.com/doc/current/cookbook/templating/PHP.html)
 in your symfony config, register bundle in AppKernel.php :
 ``` php
@@ -52,7 +58,7 @@ class ProductController extends Controller
 Json template for listAction:
 ``` php
 <?php
-// Resources/view/Product/list.php.json
+// Resources/view/Product/list.json.php
 
 $data = array();
 foreach ($products as $product) {
