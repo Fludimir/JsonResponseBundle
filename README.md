@@ -16,7 +16,16 @@ Add bundle with composer:
 `composer require bu/json-response-bundle dev-master`
 
 [Enable php templating engine](http://symfony.com/doc/current/cookbook/templating/PHP.html)
-in your symfony config, register bundle in AppKernel.php :
+in your symfony config:
+``` yaml
+# app/config/config.yml
+framework:
+    # ...
+    templating:
+        engines: ['twig', 'php']
+```
+
+register bundle in AppKernel.php :
 ``` php
 <?php
 // app/AppKernel.php
