@@ -91,6 +91,7 @@ use Bu\JsonResponseBundle\HttpFoundation\JsonResponse;
         return new JsonResponse(array('success' => true));
     }
 ```
+As of Symfony 2.7 there is similar internal class Symfony\Component\HttpFoundation\JsonResponse https://symfony.com/doc/2.7/components/http_foundation.html#creating-a-json-response
 
 License
 -------
